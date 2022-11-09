@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>RAID</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="C:\Users\HP\Desktop\web development\project 1\stylesheet.css.css">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&amp;family=Montserrat&amp;family=Sacramento&amp;display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+  
+</head>
+
+<body onload="startTime()">
+  <script>window.alert("Welcome! Let's Start Learning");</script>
+
+
+    
+
+  <section id="title">
+    <div class="container-fluid">
+
+    <!-- Nav Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="C:\Users\HP\Desktop\web development\project 1\indexcal.html "> <button>RAID Calculator</button> </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="#navbarSupportedContent">
+        
+        <ul class="navbar-nav ms-auto">
+            
+            <li class="nav-item">
+                <a class="nav-link" href="#introduction">Introduction</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#history">History</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#future">Future</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#footer">Contact</a>
+            </li>
+        </ul></div>
+    </nav>
+
+
+
+
+    <!-- Title -->
+
+    <div class="row">
+      <div class="col-lg-6">
+      <h1 id="demo"class="big-heading">RAID</h1>
+      <button type="button" onclick='document.getElementById("demo").innerHTML = "Redundant array of independent disks"'>Click Me!</button>
+    </div>
+    <div class="col-lg-6">
+      <img class="title-image"src="C:\Users\HP\Desktop\web development\project 1\Screenshot (4149).png" alt="iphone-mockup">
+      </div>
+    </div>
+  </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section id="features">
+    <div class="row">
+    <div class="feature-box col-lg-4">
+      <i onmouseover="style.color='black'"onmouseout="style.color='#333333'" class="icon fas fa-check-circle fa-4x"></i>
+      <h3 class="feature-title">Convenient</h3>
+      <p>User- friendly website to understand Raid and it's types</p>
+
+    </div>
+    <div class="feature-box col-lg-4">
+      <i onmouseover="style.color='black'"onmouseout="style.color='#333333'" class=" icon fas fa-bullseye fa-4x"></i>
+      <h3 class="feature-title">Goals</h3>
+      <p>Explain all types of Raid and decribe advantages and disadvantages</p>
+      
+    </div>
+    <div class="feature-box col-lg-4">
+       <i onmouseover="style.color='black'"onmouseout="style.color='#333333'"class="icon fa fa-heart fa-4x" > </i>
+      <h3 class="feature-title">Explore</h3>
+      <p>Make sure to provide your valuable feedback to us.</p>
+    </div>
+  </div>
+  <!-- Testimonials -->
+
+  <section id="testimonials">
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active" >
+           <h2 class="testimonail-text">RAID LEVELS</h2>
+           <em><ul>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\0.html">0</a></li>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\1.html">1</a></li>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\2.html">2</a></li>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\3.html">3</a></li>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\4.html">4</a></li>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\5.html">5</a></li>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\6.html">6</a></li>
+            <li><a href="C:\Users\HP\Desktop\web development\project 1\10.html">10</a></li>
+            </ul></em>
+        
+          
+        </div>
+        
+      </div>
+      
+    </div>
+  </section>
+
+  </section>
+  <!-- Introduction -->
+
+  <section id="introduction">
+
+    <h2 class="section-heading">What is RAID?</h2>
+    <p>RAID (redundant array of independent disks) is a way of storing the same data in different places on multiple hard disks or solid-state drives (SSDs) to protect data in the case of a drive failure. There are different RAID levels, however, and not all have the goal of providing redundancy.</p>
+    <h2 class="section-heading">How RAID works? </h2>
+    <p>RAID works by placing data on multiple disks and allowing input/output (I/O) operations to overlap in a balanced way, improving performance. Because using multiple disks increases the mean time between failures, storing data redundantly also increases fault tolerance.
+        
+        RAID arrays appear to the operating system (OS) as a single logical drive.
+        
+        RAID employs the techniques of disk mirroring or disk striping. Mirroring will copy identical data onto more than one drive. Striping partitions help spread data over multiple disk drives. Each drive's storage space is divided into units ranging from a sector of 512 bytes up to several megabytes. The stripes of all the disks are interleaved and addressed in order. Disk mirroring and disk striping can also be combined in a RAID array.
+        In a single-user system where large records are stored, the stripes are typically set up to be small (512 bytes, for example) so that a single record spans all the disks and can be accessed quickly by reading all the disks at the same time.
+
+        In a multiuser system, better performance requires a stripe wide enough to hold the typical or maximum size record, enabling overlapped disk I/O across drives.</p>
+ 
+    <h2 class="section-heading">RAID controller</h2>
+    <p>A RAID controller is a device used to manage hard disk drives in a storage array. It can be used as a level of abstraction between the OS and the physical disks, presenting groups of disks as logical units. Using a RAID controller can improve performance and help protect data in case of a crash.
+    
+    A RAID controller may be hardware- or software-based. In a hardware-based RAID product, a physical controller manages the entire array. The controller can also be designed to support drive formats such as Serial Advanced Technology Attachment and Small Computer System Interface. A physical RAID controller can also be built into a server's motherboard.
+    
+    With software-based RAID, the controller uses the resources of the hardware system, such as the central processor and memory. While it performs the same functions as a hardware-based RAID controller, software-based RAID controllers may not enable as much of a performance boost and can affect the performance of other applications on the server.
+    
+    If a software-based RAID implementation is not compatible with a system's boot-up process and hardware-based RAID controllers are too costly, firmware, or driver-based RAID, is a potential option.
+    
+    Firmware-based RAID controller chips are located on the motherboard, and all operations are performed by the central processing unit (CPU), similar to software-based RAID. However, with firmware, the RAID system is only implemented at the beginning of the boot process. Once the OS has loaded, the controller driver takes over RAID functionality. A firmware RAID controller is not as pricey as a hardware option, but it puts more strain on the computer's CPU. Firmware-based RAID is also called hardware-assisted software RAID, hybrid model RAID and fake RAID.</p>
+</section>
+<br>
+
+  <!-- History-->
+
+  <section id="history">
+
+    <h3 class="history-heading">History of RAID</h3>
+    <P>The term RAID was coined in 1987 by David Patterson, Randy Katz and Garth A. Gibson. In their 1988 technical report, "A Case for Redundant Arrays of Inexpensive Disks (RAID)," the three argued that an array of inexpensive drives could beat the performance of the top expensive disk drives of the time. By using redundancy, a RAID array could be more reliable than any one disk drive.
+
+        While this report was the first to put a name to the concept, the use of redundant disks was already being discussed by others. Geac Computer Corp.'s Gus German and Ted Grunau first referred to this idea as MF-100. IBM's Norman Ken Ouchi filed a patent in 1977 for the technology, which was later named RAID 4. In 1983, Digital Equipment Corp. shipped the drives that would become RAID 1, and in 1986, another IBM patent was filed for what would become RAID 5. Patterson, Katz and Gibson also looked at what was being done by companies such as Tandem Computers, Thinking Machines and Maxstor to define their RAID taxonomies.
+        
+        While the levels of RAID listed in the 1988 report essentially put names to technologies that were already in use, creating common terminology for the concept helped stimulate the data storage market to develop more RAID array products.
+        
+        According to Katz, the term inexpensive in the acronym was soon replaced with independent by industry vendors due to the implications of low costs.</P>
+    </section>
+    <br>
+  <!--Future-->
+  <section id ="future">
+    <h3 class="future-heading">Future of RAID</h3>
+    <p>The future of RAID
+        RAID is not quite dead, but many analysts say the technology has become obsolete in recent years. Alternatives such as erasure coding offer better data protection -- albeit, at a higher price -- and have been developed with the intention of addressing the weaknesses of RAID. As drive capacity increases, so, too, does the chance for error with a RAID array, and capacities are consistently increasing.
+        
+        The rise of SSDs is also seen as alleviating the need for RAID. SSDs have no moving parts and do not fail as often as hard disk drives. SSD arrays often use techniques such as wear leveling instead of relying on RAID for data protection. Modern SSDs are fast enough that modern servers may not need the slight performance boost that RAID offers. However, they still may be currently used to prevent data loss.
+        
+        Hyperscale computing also removes the need for RAID by using redundant servers instead of redundant drives.
+        
+        Still, RAID remains an ingrained part of data storage and major technology vendors continue to release RAID products</p>
+  </section>
+
+
+  <!-- Footer -->
+
+
+    
+    
+    <div id="txt"class="clock"></div>
+    
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+
+  <footer id="footer">
+    <i class=" social-icon fab fa-facebook"></i>
+    <i class="social-icon fab fa-twitter"></i>
+    <i class=" social-icon fab fa-instagram"></i>
+    <i class=" social-icon fas fa-envelope"></i>
+
+    <p>@ Copyright RAID</p>
+
+  </footer>
+
+
+</body>
+
+</html>
